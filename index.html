@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Resister Now!</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background-color: rgb(55, 179, 119);
+        }
+        .mainsub{
+            background-color: white;
+            min-height:80vh;
+            width:60%;
+            position:absolute;
+            left:22%;
+            top:10%;
+            bottom: 20%;
+            margin-bottom: 20%;
+            box-shadow: 3px 2px 30px rgb(2, 104, 85);
+        }
+        .sub1{
+            float:left;
+            background-color: rgba(89, 179, 166, 0.757);
+            width:50%;
+            height:100%;
+           
+        }
+        .sub2{
+            
+            background-color:white;
+            
+            display: flex;
+            flex-direction: column;
+        } 
+        img{
+            height:200px;
+            width:55%;
+            opacity: 1;
+            margin-left:20%;
+            margin-top:25%;
+            cursor:pointer;
+        }
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        header{
+            margin-top: 14px;
+            margin-bottom:10px;
+            font-size: 2em;
+            font-weight: 500;
+            color:rgb(5, 149, 101);
+        
+            
+        }
+        form{
+            margin-top: 10%;
+
+        }
+        input{
+            margin-top: 10px;
+            margin-bottom:10px;
+
+        }
+        input,button{
+            padding-top:10px;
+            padding-bottom:10px;
+            margin-left: 10%;
+            border:none;
+            border-bottom:3px solid rgb(77, 157, 125);
+            border-left:3px solid rgb(77, 157, 125);
+            float:inline-start;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.168);
+            width: 80%;
+
+        }
+       
+       
+        p{
+            color:rgb(0, 0, 0);
+            font-size: large;
+            font-weight: 600;
+            margin-top:0%
+        }
+        button{
+            background-color: aquamarine;
+            color:rgb(0, 0, 0);
+        }
+        button:hover{
+            cursor: pointer;
+
+        }
+        ul{
+            list-style: none;
+            float: right;
+            display: flex;
+            padding-left: 15px;
+            padding-right: 15px;
+            color:white;
+            position: absolute;
+            top:2%;
+            right:0;
+            
+            color:rgb(55, 179, 119) ;
+
+
+
+        }
+        li{
+            padding-left: 25px;
+            padding-right: 25px;
+            row-gap: 20px;
+            background-color: white;
+            border-radius: 25px;
+
+        }
+        li:hover{
+            background-color: gray;
+            color:white;
+        }
+        span{
+            cursor: pointer;
+        }
+        .mv{
+            display: none;
+        }
+        @media screen and (max-width:500px){
+            .sub1{
+                display: none;
+            }
+
+            
+            .mv{
+                display: block;
+                position: absolute;
+                height:100px;
+                width:150px;
+                margin-top: -36%;
+               
+               
+                
+
+            }
+            .socialmedia{
+                display: none;
+            }
+            p{
+                color:red;
+            }
+           form{
+           min-height:50vh;
+overflow:scroll;
+        }
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="mainsub">
+        <img src="company.png" class="mv">
+        <div class="sub1">
+            <img src="company.png">
+           <center>
+           <p>Resister now and earn 50% Bonus</p>
+           <p>Use "AMAZON50" for 50% OFF</p>
+        </center>
+        </div>
+        <div class="sub2">
+            <center>
+                <header>Welcome</header>
+            </center>
+        <form>
+            
+            <input type="text" placeholder="First Name"><br>
+            <input type="text" placeholder="Last Name"><br>
+            <input type="date" placeholder="DOB" class="dt"><br>
+            <input type="email" placeholder="Add Email Address"><br>
+            <input type="number" placeholder="Add Phno"><br>
+            <button type="submit">Register</button>
+        </form>
+    
+        </div>
+    </div>
+        <div class="socialmedia">
+            <ul>
+                <li><span class="material-symbols-outlined">mail</span></li>
+                <li><span class="material-symbols-outlined">notifications</span></li>
+                <li><span class="material-symbols-outlined">help_center</span></li>
+            </ul>
+
+        </div>
+    
+
+    
+</body>
+</html>
